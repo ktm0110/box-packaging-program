@@ -1,0 +1,11 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/kimtaemin/github/opensource-Basic/test_4-ArrayPointer_test/test_4'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _initializeBigBox, symObjAddr: 0x0, symBinAddr: 0x1000038D0, symSize: 0x1BC }
+  - { offsetInCU: 0x57, offset: 0x57, size: 0x8, addend: 0x0, symName: _initializeBigBox, symObjAddr: 0x0, symBinAddr: 0x1000038D0, symSize: 0x1BC }
+  - { offsetInCU: 0xFD, offset: 0xFD, size: 0x8, addend: 0x0, symName: _placeBox, symObjAddr: 0x1BC, symBinAddr: 0x100003A8C, symSize: 0x154 }
+  - { offsetInCU: 0x1E5, offset: 0x1E5, size: 0x8, addend: 0x0, symName: _visualizeBigBox, symObjAddr: 0x310, symBinAddr: 0x100003BE0, symSize: 0x11C }
+  - { offsetInCU: 0x287, offset: 0x287, size: 0x8, addend: 0x0, symName: _freeBigBox, symObjAddr: 0x42C, symBinAddr: 0x100003CFC, symSize: 0xBC }
+  - { offsetInCU: 0x2FF, offset: 0x2FF, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x4E8, symBinAddr: 0x100003DB8, symSize: 0x15C }
+...
