@@ -18,6 +18,7 @@ int main(){
             }
         }
     }
+    /*
     for(int i=0; i< box2[0]; i++){
         for(int j=0; j<(box1[1]); j++){
             for(int k=0; k<box1[2]+box2[1]; k++){
@@ -28,10 +29,11 @@ int main(){
         printf("\n");
     }
     printf("==============\n\n");
+    */
+
 
     // 큰 박스 1로 채우기
-
-    // 박스 1 채우기
+    // 큰 박스에 박스1 채우기
     for(int i=0; i<box1[0]; i++){
         for(int j=0; j<box1[1]; j++){
             for(int k=0; k<box1[2]; k++){
@@ -39,6 +41,8 @@ int main(){
             }
         }
     }
+
+    /*
     // 확인용 배열 출력
     for(int i=0; i< box2[0]; i++){
         for(int j=0; j<(box1[1]); j++){
@@ -50,7 +54,9 @@ int main(){
         printf("\n");
     }
     printf("==============\n\n");
+    */
 
+    /*
     // 큰 박스 0으로 초기화
     for(int i=0; i< box2[0]; i++){
         for(int j=0; j<(box1[1]); j++){
@@ -59,7 +65,8 @@ int main(){
             }
         }
     }
-    // 박스 2 채우기
+    */
+    // 큰 박스에 박스2 채우기
     for(int i=0; i<box2[0]; i++){
         for(int j=0; j<box2[1]; j++){
             for(int k=box1[2]; k<(box1[2] + box2[2]); k++){
@@ -78,5 +85,8 @@ int main(){
         }
         printf("\n");
     }
+    
+
+
     return 0;
 }
