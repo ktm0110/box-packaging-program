@@ -14,23 +14,24 @@ int main() {
     int box1_size[3];
     int box2_size[3];
 
-    makeBox(box1_size, box2_size); // makeBox 함수 호출
+    // 작은 상자 크기 생성
+    makeBox(box1_size, box2_size);
 
-    // 큰 상자의 치수 계산
+    // 큰 상자의 크기 결정
     int max_height = (box1_size[0] > box2_size[0]) ? box1_size[0] : box2_size[0];
     int max_depth = (box1_size[1] > box2_size[1]) ? box1_size[1] : box2_size[1];
     int max_width = box1_size[2] + box2_size[2];
 
-    // 큰 상자를 위한 메모리 동적 할당
+    // 큰 상자 생성
     int ***big_box = makeBigBox(max_height, max_depth, max_width);
 
-    // 상자 1을 큰 상자 안에 배치
-    placeBox(big_box, box1_size, box2_size); // 시작 위치: (0, 0, 0)
+    // 상자 배치
+    placeBox(big_box, box1_size, box2_size);
 
-    // 3D 배열 내용 시각화
+    // 정면
     printBigBox(big_box, max_height, max_depth, max_width);
 
-    // 동적으로 할당된 메모리 해제
+    // 메모리 해제
     freeBigBox_Array(big_box, max_height, max_depth);
 
     return 0;
@@ -71,7 +72,7 @@ int ***makeBigBox(int height, int depth, int width) {
             }
 
             for (int k = 0; k < width; k++) {
-                array[i][j][k] = 0; // 모든 요소를 0으로 초기화
+                array[i][j][k] = 0;
             }
         }
     }
@@ -171,7 +172,7 @@ void printBigBox(int ***array, int height, int depth, int width) {
 }
 */
 
-// 동적으로 할당된 3D 배열 메모리를 해제하는 함수
+// 메모리 해제
 void freeBigBox_Array(int ***array, int height, int depth) {
     for (int i = 0; i < height; i++) {
         for (int j = 0; j < depth; j++) {
