@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 // 모든 값을 0으로 설정된 3D 배열을 초기화하는 함수
-int ***initialize3DArray(int width, int depth, int height) {
+int ***makeBigBox(int width, int depth, int height) {
     int ***array = (int ***)malloc(width * sizeof(int **));
     if (array == NULL) {
         printf("메모리 할당 실패.\n");
@@ -48,7 +48,18 @@ void placeBox(int ***big_box, int box_size[], int start_x, int start_y, int star
 }
 
 // 3D 배열의 내용을 시각화하는 함수
-void visualize3DArray(int ***array, int width, int depth, int height) {
+void printBigBox(int ***array, int width, int depth, int height) {
+    printf("3D 배열:\n");
+    for (int i = 0; i < width; i++) {
+        for (int j = 0; j < depth; j++) {
+            printf("%d ", array[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+/*
+void printBigBox(int ***array, int width, int depth, int height) {
     printf("3D 배열:\n");
     for (int i = 0; i < width; i++) {
         for (int j = 0; j < depth; j++) {
@@ -60,9 +71,10 @@ void visualize3DArray(int ***array, int width, int depth, int height) {
         printf("\n");
     }
 }
+*/
 
 // 동적으로 할당된 3D 배열 메모리를 해제하는 함수
-void free3DArray(int ***array, int width, int depth) {
+void freeBigBox_Array(int ***array, int width, int depth) {
     for (int i = 0; i < width; i++) {
         for (int j = 0; j < depth; j++) {
             free(array[i][j]);
@@ -83,7 +95,7 @@ int main() {
     int max_height = (box1_size[2] > box2_size[2]) ? box1_size[2] : box2_size[2];
 
     // 큰 상자를 위한 메모리 동적 할당
-    int ***big_box = initialize3DArray(max_width, max_depth, max_height);
+    int ***big_box = makeBigBox(max_width, max_depth, max_height);
 
     // 상자 1을 큰 상자 안에 배치
     placeBox(big_box, box1_size, 0, 0, 0); // 시작 위치: (0, 0, 0)
@@ -92,10 +104,10 @@ int main() {
     placeBox(big_box, box2_size, box1_size[0], 0, 0); // 시작 위치: (상자 1 너비, 0, 0)
 
     // 3D 배열 내용 시각화
-    visualize3DArray(big_box, max_width, max_depth, max_height);
+    printBigBox(big_box, max_width, max_depth, max_height);
 
     // 동적으로 할당된 메모리 해제
-    free3DArray(big_box, max_width, max_depth);
+    freeBigBox_Array(big_box, max_width, max_depth);
 
     return 0;
 }
