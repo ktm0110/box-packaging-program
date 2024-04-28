@@ -85,8 +85,16 @@ int main(){
         }
         printf("\n");
     }
-    
 
+    // 정면
+    printf("============\n");
+    // 높이만 거꾸로 출력
+    for(int i=box1[0]; i>=0; i--){
+        for(int j=0; j<(box1[2]+box2[2]); j++){
+            printf("%d ", bigbox[i][0][j]);
+        }
+        printf("\n");
+    }
 
     return 0;
 }

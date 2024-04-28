@@ -3,22 +3,31 @@
 #include <string.h>
 #include <unistd.h> // Mac에서는 이 헤더 파일을 포함합니다.
 
+#define NUM_BOXES 2
+
 float A, B, C;
 
-float cubeWidth1 = 20; // 가로
-float cubeHeight1 = 10; // 세로
-float cubeDepth1 = 5; // 높이
+// 왼쪽 상자의 가로, 세로, 높이, 좌표
+float left_cube_width = 20;
+float left_cube_height = 10;
+float left_cube_depth = 30;
+float left_cube_x = 0;
+float left_cube_y = 0;
+float left_cube_z = 0;
 
-float cubeWidth2 = 10; // 가로
-float cubeHeight2 = 15; // 세로
-float cubeDepth2 = 8; // 높이
+// 오른쪽 상자의 가로, 세로, 높이, 좌표
+float right_cube_width = 0;
+float right_cube_height = 0;
+float right_cube_depth = 0;
+float right_cube_x = 0;
+float right_cube_y = 0;
+float right_cube_z = 0;
 
-int width = 160, height = 44;
+int width = 160, height = 44; // 콘솔 창의 크기
 float zBuffer[160 * 44];
 char buffer[160 * 44];
-int backgroundASCIICode = '.';
+int backgroundASCIICode = ' '; // 백그라운드 아스키코드를 공백으로 변경
 int distanceFromCam = 100;
-float horizontalOffset;
 float K1 = 40;
 
 float incrementSpeed = 0.6;
@@ -28,44 +37,17 @@ float ooz;
 int xp, yp;
 int idx;
 
-float calculateX(int i, int j, int k, int cubeType) {
-    if (cubeType == 1) {
-        return j * sin(A) * sin(B) * cos(C) - k * cos(A) * sin(B) * cos(C) +
-            j * cos(A) * sin(C) + k * sin(A) * sin(C) + i * cos(B) * cos(C);
-    } else {
-        return j * sin(A) * sin(B) * cos(C) - k * cos(A) * sin(B) * cos(C) +
-            j * cos(A) * sin(C) + k * sin(A) * sin(C) + i * cos(B) * cos(C) + 25; // 25는 가로 길이의 차이를 반영한 값입니다.
-    }
-}
+void calculateForSurface(float cubeX, float cubeY, float cubeZ, int ch) {
+    x = cubeX * sin(A) * sin(B) * cos(C) - cubeZ * cos(A) * sin(B) * cos(C) +
+        cubeX * cos(A) * sin(C) + cubeZ * sin(A) * sin(C) + cubeY * cos(B) * cos(C);
+    y = cubeX * cos(A) * cos(C) + cubeZ * sin(A) * cos(C) -
+        cubeX * sin(A) * sin(B) * sin(C) + cubeZ * cos(A) * sin(B) * sin(C) -
+        cubeY * cos(B) * sin(C);
+    z = cubeZ * cos(A) * cos(B) - cubeX * sin(A) * cos(B) + cubeY * sin(B);
 
-float calculateY(int i, int j, int k, int cubeType) {
-    if (cubeType == 1) {
-        return j * cos(A) * cos(C) + k * sin(A) * cos(C) -
-            j * sin(A) * sin(B) * sin(C) + k * cos(A) * sin(B) * sin(C) -
-            i * cos(B) * sin(C);
-    } else {
-        return j * cos(A) * cos(C) + k * sin(A) * cos(C) -
-            j * sin(A) * sin(B) * sin(C) + k * cos(A) * sin(B) * sin(C) -
-            i * cos(B) * sin(C);
-    }
-}
+    ooz = 1 / (z + distanceFromCam);
 
-float calculateZ(int i, int j, int k, int cubeType) {
-    if (cubeType == 1) {
-        return k * cos(A) * cos(B) - j * sin(A) * cos(B) + i * sin(B);
-    } else {
-        return k * cos(A) * cos(B) - j * sin(A) * cos(B) + i * sin(B) + 3; // 3은 높이의 차이를 반영한 값입니다.
-    }
-}
-
-void calculateForSurface(float cubeX, float cubeY, float cubeZ, int ch, int cubeType) {
-    x = calculateX(cubeX, cubeY, cubeZ, cubeType);
-    y = calculateY(cubeX, cubeY, cubeZ, cubeType);
-    z = calculateZ(cubeX, cubeY, cubeZ, cubeType) + distanceFromCam;
-
-    ooz = 1 / z;
-
-    xp = (int)(width / 2 + horizontalOffset + K1 * ooz * x * 2);
+    xp = (int)(width / 2 + K1 * ooz * x * 2);
     yp = (int)(height / 2 + K1 * ooz * y);
 
     idx = xp + yp * width;
@@ -80,38 +62,35 @@ void calculateForSurface(float cubeX, float cubeY, float cubeZ, int ch, int cube
 int main() {
     printf("\x1b[2J");
     while (1) {
-        memset(buffer, backgroundASCIICode, width * height);
+        memset(buffer, ' ', width * height); // 백그라운드 아스키코드를 공백으로 설정
         memset(zBuffer, 0, width * height * 4);
-        cubeWidth1 = 20; // 첫 번째 사각형의 가로
-        cubeHeight1 = 10; // 첫 번째 사각형의 세로
-        cubeDepth1 = 5; // 첫 번째 사각형의 높이
-        cubeWidth2 = 10; // 두 번째 사각형의 가로
-        cubeHeight2 = 15; // 두 번째 사각형의 세로
-        cubeDepth2 = 8; // 두 번째 사각형의 높이
-        horizontalOffset = -2 * cubeWidth1;
-        // 첫 번째 사각형
-        for (float cubeX = -cubeWidth1; cubeX < cubeWidth1; cubeX += incrementSpeed) {
-            for (float cubeY = -cubeHeight1; cubeY < cubeHeight1; cubeY += incrementSpeed) {
-                calculateForSurface(cubeX, cubeY, -cubeDepth1, '@', 1);
-                calculateForSurface(cubeWidth1, cubeY, cubeX, '$', 1);
-                calculateForSurface(-cubeWidth1, cubeY, -cubeX, '~', 1);
-                calculateForSurface(-cubeX, cubeY, cubeWidth1, '#', 1);
-                calculateForSurface(cubeX, -cubeHeight1, -cubeY, ';', 1);
-                calculateForSurface(cubeX, cubeHeight1, cubeY, '+', 1);
+
+        // 왼쪽 상자 그리기
+        for (float cubeX = -left_cube_width; cubeX < left_cube_width; cubeX += incrementSpeed) {
+            for (float cubeY = -left_cube_height; cubeY < left_cube_height; cubeY += incrementSpeed) {
+                calculateForSurface(cubeX + left_cube_x, cubeY + left_cube_y, -left_cube_depth + left_cube_z, '@');
+                calculateForSurface(left_cube_width + left_cube_x, cubeY + left_cube_y, cubeX + left_cube_x, '$');
+                calculateForSurface(-left_cube_width + left_cube_x, cubeY + left_cube_y, -cubeX + left_cube_x, '~');
+                calculateForSurface(-cubeX + left_cube_x, cubeY + left_cube_y, left_cube_width + left_cube_x, '#');
+                calculateForSurface(cubeX + left_cube_x, -left_cube_height + left_cube_y, -cubeY + left_cube_y, ';');
+                calculateForSurface(cubeX + left_cube_x, left_cube_height + left_cube_y, cubeY + left_cube_y, '+');
             }
         }
-        // 두 번째 사각형
-        horizontalOffset = 2 * cubeWidth1; // 가로 길이의 차이를 반영
-        for (float cubeX = -cubeWidth2; cubeX < cubeWidth2; cubeX += incrementSpeed) {
-            for (float cubeY = -cubeHeight2; cubeY < cubeHeight2; cubeY += incrementSpeed) {
-                calculateForSurface(cubeX, cubeY, -cubeDepth2, '@', 2);
-                calculateForSurface(cubeWidth2, cubeY, cubeX, '$', 2);
-                calculateForSurface(-cubeWidth2, cubeY, -cubeX, '~', 2);
-                calculateForSurface(-cubeX, cubeY, cubeWidth2, '#', 2);
-                calculateForSurface(cubeX, -cubeHeight2, -cubeY, ';', 2);
-                calculateForSurface(cubeX, cubeHeight2, cubeY, '+', 2);
+
+        // 오른쪽 상자 그리기
+        // 오른쪽 상자의 높이를 왼쪽 상자의 높이에 맞추기
+        float right_cube_y_offset = left_cube_height - right_cube_height;
+        for (float cubeX = -right_cube_width; cubeX < right_cube_width; cubeX += incrementSpeed) {
+            for (float cubeY = -right_cube_height; cubeY < right_cube_height; cubeY += incrementSpeed) {
+                calculateForSurface(cubeX + right_cube_x, cubeY + right_cube_y + right_cube_y_offset, -right_cube_depth + right_cube_z, '@');
+                calculateForSurface(right_cube_width + right_cube_x, cubeY + right_cube_y + right_cube_y_offset, cubeX + right_cube_x, '$');
+                calculateForSurface(-right_cube_width + right_cube_x, cubeY + right_cube_y + right_cube_y_offset, -cubeX + right_cube_x, '~');
+                calculateForSurface(-cubeX + right_cube_x, cubeY + right_cube_y + right_cube_y_offset, right_cube_width + right_cube_x, '#');
+                calculateForSurface(cubeX + right_cube_x, -right_cube_height + right_cube_y + right_cube_y_offset, -cubeY + right_cube_y + right_cube_y_offset, ';');
+                calculateForSurface(cubeX + right_cube_x, right_cube_height + right_cube_y + right_cube_y_offset, cubeY + right_cube_y + right_cube_y_offset, '+');
             }
         }
+
         printf("\x1b[H");
         for (int k = 0; k < width * height; k++) {
             putchar(k % width ? buffer[k] : 10);
@@ -120,7 +99,7 @@ int main() {
         A += 0.05;
         B += 0.05;
         C += 0.01;
-        usleep(8000 * 2);
+        usleep(10*16000);
     }
     return 0;
 }
