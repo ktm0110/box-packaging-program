@@ -1,0 +1,307 @@
+﻿  main.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1157,16): error C2054: 'WINGDIAPI' 다음에 '('가 필요합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1157,16): error C2085: 'APIENTRY': 정식 매개 변수 목록에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1157,25): error C2146: 구문 오류: ','이(가) 'glAccum' 식별자 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1157,33): error C2143: 구문 오류: ';'이(가) '(' 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1157,58): error C2059: 구문 오류: ')'
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1158,16): error C2054: 'WINGDIAPI' 다음에 '('가 필요합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1158,16): error C2085: 'APIENTRY': 정식 매개 변수 목록에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1158,25): error C2146: 구문 오류: ','이(가) 'glAlphaFunc' 식별자 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1158,37): error C2143: 구문 오류: ';'이(가) '(' 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1158,63): error C2059: 구문 오류: ')'
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1159,21): error C2054: 'WINGDIAPI' 다음에 '('가 필요합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1159,21): error C2085: 'APIENTRY': 정식 매개 변수 목록에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1159,30): error C2146: 구문 오류: ','이(가) 'glAreTexturesResident' 식별자 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1159,52): error C2143: 구문 오류: ';'이(가) '(' 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1159,109): error C2059: 구문 오류: ')'
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1160,16): error C2054: 'WINGDIAPI' 다음에 '('가 필요합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1160,16): error C2085: 'APIENTRY': 정식 매개 변수 목록에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1160,25): error C2146: 구문 오류: ','이(가) 'glArrayElement' 식별자 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1160,40): error C2143: 구문 오류: ';'이(가) '(' 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1160,48): error C2059: 구문 오류: ')'
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1161,16): error C2054: 'WINGDIAPI' 다음에 '('가 필요합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1161,16): error C2085: 'APIENTRY': 정식 매개 변수 목록에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1161,25): error C2146: 구문 오류: ','이(가) 'glBegin' 식별자 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1161,33): error C2143: 구문 오류: ';'이(가) '(' 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1161,45): error C2059: 구문 오류: ')'
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1162,16): error C2054: 'WINGDIAPI' 다음에 '('가 필요합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1162,16): error C2085: 'APIENTRY': 정식 매개 변수 목록에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1162,25): error C2146: 구문 오류: ','이(가) 'glBindTexture' 식별자 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1162,39): error C2143: 구문 오류: ';'이(가) '(' 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1162,69): error C2059: 구문 오류: ')'
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1163,16): error C2054: 'WINGDIAPI' 다음에 '('가 필요합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1163,16): error C2085: 'APIENTRY': 정식 매개 변수 목록에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1163,25): error C2146: 구문 오류: ','이(가) 'glBitmap' 식별자 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1163,34): error C2143: 구문 오류: ';'이(가) '(' 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1163,147): error C2059: 구문 오류: ')'
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1164,16): error C2054: 'WINGDIAPI' 다음에 '('가 필요합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1164,16): error C2085: 'APIENTRY': 정식 매개 변수 목록에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1164,25): error C2146: 구문 오류: ','이(가) 'glBlendFunc' 식별자 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1164,37): error C2143: 구문 오류: ';'이(가) '(' 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1164,68): error C2059: 구문 오류: ')'
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1165,16): error C2054: 'WINGDIAPI' 다음에 '('가 필요합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1165,16): error C2085: 'APIENTRY': 정식 매개 변수 목록에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1165,25): error C2146: 구문 오류: ','이(가) 'glCallList' 식별자 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1165,36): error C2143: 구문 오류: ';'이(가) '(' 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1165,48): error C2059: 구문 오류: ')'
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1166,16): error C2054: 'WINGDIAPI' 다음에 '('가 필요합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1166,16): error C2085: 'APIENTRY': 정식 매개 변수 목록에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1166,25): error C2146: 구문 오류: ','이(가) 'glCallLists' 식별자 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1166,37): error C2143: 구문 오류: ';'이(가) '(' 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1166,81): error C2059: 구문 오류: ')'
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1167,16): error C2054: 'WINGDIAPI' 다음에 '('가 필요합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1167,16): error C2085: 'APIENTRY': 정식 매개 변수 목록에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1167,25): error C2146: 구문 오류: ','이(가) 'glClear' 식별자 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1167,33): error C2143: 구문 오류: ';'이(가) '(' 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1167,49): error C2059: 구문 오류: ')'
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1168,16): error C2054: 'WINGDIAPI' 다음에 '('가 필요합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1168,16): error C2085: 'APIENTRY': 정식 매개 변수 목록에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1168,25): error C2146: 구문 오류: ','이(가) 'glClearAccum' 식별자 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1168,38): error C2143: 구문 오류: ';'이(가) '(' 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1168,94): error C2059: 구문 오류: ')'
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1169,16): error C2054: 'WINGDIAPI' 다음에 '('가 필요합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1169,16): error C2085: 'APIENTRY': 정식 매개 변수 목록에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1169,25): error C2146: 구문 오류: ','이(가) 'glClearColor' 식별자 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1169,38): error C2143: 구문 오류: ';'이(가) '(' 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1169,98): error C2059: 구문 오류: ')'
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1170,16): error C2054: 'WINGDIAPI' 다음에 '('가 필요합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1170,16): error C2085: 'APIENTRY': 정식 매개 변수 목록에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1170,25): error C2146: 구문 오류: ','이(가) 'glClearDepth' 식별자 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1170,38): error C2143: 구문 오류: ';'이(가) '(' 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1170,53): error C2059: 구문 오류: ')'
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1171,16): error C2054: 'WINGDIAPI' 다음에 '('가 필요합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1171,16): error C2085: 'APIENTRY': 정식 매개 변수 목록에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1171,25): error C2146: 구문 오류: ','이(가) 'glClearIndex' 식별자 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1171,38): error C2143: 구문 오류: ';'이(가) '(' 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1171,48): error C2059: 구문 오류: ')'
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1172,16): error C2054: 'WINGDIAPI' 다음에 '('가 필요합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1172,16): error C2085: 'APIENTRY': 정식 매개 변수 목록에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1172,25): error C2146: 구문 오류: ','이(가) 'glClearStencil' 식별자 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1172,40): error C2143: 구문 오류: ';'이(가) '(' 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1172,48): error C2059: 구문 오류: ')'
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1173,16): error C2054: 'WINGDIAPI' 다음에 '('가 필요합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1173,16): error C2085: 'APIENTRY': 정식 매개 변수 목록에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1173,25): error C2146: 구문 오류: ','이(가) 'glClipPlane' 식별자 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1173,37): error C2143: 구문 오류: ';'이(가) '(' 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1173,76): error C2059: 구문 오류: ')'
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1174,16): error C2054: 'WINGDIAPI' 다음에 '('가 필요합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1174,16): error C2085: 'APIENTRY': 정식 매개 변수 목록에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1174,25): error C2146: 구문 오류: ','이(가) 'glColor3b' 식별자 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1174,35): error C2143: 구문 오류: ';'이(가) '(' 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1174,73): error C2059: 구문 오류: ')'
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1175,16): error C2054: 'WINGDIAPI' 다음에 '('가 필요합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1175,16): error C2085: 'APIENTRY': 정식 매개 변수 목록에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1175,25): error C2146: 구문 오류: ','이(가) 'glColor3bv' 식별자 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1175,36): error C2143: 구문 오류: ';'이(가) '(' 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1175,52): error C2059: 구문 오류: ')'
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1176,16): error C2054: 'WINGDIAPI' 다음에 '('가 필요합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1176,16): error C2085: 'APIENTRY': 정식 매개 변수 목록에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1176,25): error C2146: 구문 오류: ','이(가) 'glColor3d' 식별자 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1176,35): error C2143: 구문 오류: ';'이(가) '(' 앞에 없습니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1176,79): error C2059: 구문 오류: ')'
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1177,16): error C2054: 'WINGDIAPI' 다음에 '('가 필요합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1177,16): error C1003: 오류 수가 100개를 초과했습니다. 컴파일을 중지합니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
