@@ -46,6 +46,7 @@ void makeBox(int box1[], int box2[]) {
         box1[i] = rand() % 10 + 1;
         box2[i] = rand() % 10 + 1;
     }
+    printf("순서대로 높이, 세로, 가로\n");
     printf("박스1: %d, %d, %d\n박스2: %d, %d, %d\n\n", box1[0], box1[1], box1[2], box2[0], box2[1], box2[2]);
 }
 

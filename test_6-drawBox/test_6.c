@@ -9,19 +9,19 @@ float A, B, C;
 
 // 왼쪽 상자의 가로, 세로, 높이, 좌표
 float left_cube_width = 20;
-float left_cube_height = 10;
-float left_cube_depth = 30;
+float left_cube_height = 20;
+float left_cube_depth = 20;
 float left_cube_x = 0;
 float left_cube_y = 0;
 float left_cube_z = 0;
 
 // 오른쪽 상자의 가로, 세로, 높이, 좌표
-float right_cube_width = 0;
-float right_cube_height = 0;
-float right_cube_depth = 0;
-float right_cube_x = 0;
+float right_cube_width = 15;
+float right_cube_height = 15;
+float right_cube_depth = 15;
+float right_cube_x = 20;
 float right_cube_y = 0;
-float right_cube_z = 0;
+float right_cube_z = 20;
 
 int width = 160, height = 44; // 콘솔 창의 크기
 float zBuffer[160 * 44];
