@@ -1,3 +1,6 @@
+A program that calculates the size of one box to contain two boxes
+
+opensource basic project
 # readme
 1. 포인터 사용
 2. 동적할당 사용
