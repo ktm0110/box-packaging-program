@@ -85,7 +85,7 @@ C 언어를 사용하여 **두 개의 3차원 박스(Box)** 를 생성하고,
 3. 포인터 배열에 박스 정보 저장
 4. 두 박스를 포함할 최소 박스 크기 계산
 5. 각 면(face) 단위로 출력
-6. (Optional) OpenGL을 이용한 시각화
+6. OpenGL을 이용한 시각화
 
 <img width="256" height="239" alt="예시1" src="https://github.com/user-attachments/assets/bd7b83e7-b5d1-4ce6-bcab-07234051efb1" />
 <img width="496" height="507" alt="예시2" src="https://github.com/user-attachments/assets/2e6768fe-82a2-4dc5-ab09-ecd088116e73" />
