@@ -127,8 +127,7 @@ box-packaging-program/
 ![Choose_Width,depth,height](https://github.com/user-attachments/assets/9a926d52-3de1-487f-ba9d-4e8c8472b557)
 ![opengl](https://github.com/user-attachments/assets/2c08e206-c0bd-4925-8d78-1357d9100d94)
 
-[![Video Label](http://img.youtube.com/vi/'cKpNziEF3Dw'/0.jpg<img width="496" height="507" alt="예시2" src="https://github.com/user-attachments/assets/3463ebf1-7e6c-4797-a165-25534f57f86d" />
-)]
+[![Video Label](http://img.youtube.com/vi/'cKpNziEF3Dw'/0.jpg)]
 
 ---
 
